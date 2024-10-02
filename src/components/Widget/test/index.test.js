@@ -1,13 +1,11 @@
 import { configure, mount } from 'enzyme';
 import { Provider } from 'react-redux'
-import Adapter from '@wojtekmaj/enzyme-adapter-react-17';
 
 import assetMock from '../../../../mocks/fileMock';
 import { createMockStore } from '../../../utils/store'
 import Widget from '../index';
 import WidgetLayout from '../layout';
 
-configure({ adapter: new Adapter() });
 
 const mockStore =  createMockStore()
 

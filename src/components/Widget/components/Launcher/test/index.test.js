@@ -1,12 +1,10 @@
 import { configure, mount } from 'enzyme';
 import { Provider } from 'react-redux'
 import configureMockStore from 'redux-mock-store'
-import Adapter from '@wojtekmaj/enzyme-adapter-react-17';
 
 import Launcher from '../index';
 import Badge from '../components/Badge';
 
-configure({ adapter: new Adapter() });
 const mockStore =  configureMockStore()
 
 describe('<Launcher />', () => {

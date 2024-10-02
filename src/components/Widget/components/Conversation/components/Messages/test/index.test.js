@@ -1,6 +1,5 @@
 import { mount, configure } from 'enzyme';
 import { Provider } from 'react-redux'
-import Adapter from '@wojtekmaj/enzyme-adapter-react-17';
 
 import { createNewMessage, createLinkSnippet, createComponentMessage } from '../../../../../../../utils/messages';
 import { createMockStore } from '../../../../../../../utils/store';
@@ -9,7 +8,6 @@ import Messages from '../index';
 import Message from '../components/Message';
 import Snippet from '../components/Snippet';
 
-configure({ adapter: new Adapter() });
 
 describe('<Messages />', () => {
   

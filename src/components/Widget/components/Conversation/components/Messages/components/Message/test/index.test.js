@@ -1,10 +1,8 @@
 import { shallow, configure } from 'enzyme';
-import Adapter from '@wojtekmaj/enzyme-adapter-react-17';
 
 import { createNewMessage } from '../../../../../../../../../utils/messages';
 import Message from '../index';
 
-configure({ adapter: new Adapter() });
 
 describe('<Message />', () => {
   /* eslint-disable no-underscore-dangle */
